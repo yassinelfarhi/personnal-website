@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="style.css">
+    <title>Mon CV</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+             <h2 class="logo">Yassine El Farhi</h2>
+             <!-- <div class="imgProfile"><img src="photo.jpeg" alt="profile image here"></div> -->
+             <div class="toggle"><i class="fas fa-bars"></i></div>
+             <!-- <div class="toggle"><i class="far fa-window-close"></i></div>   -->
+        </header>
+     <video src="video.mp4" muted loop autoplay></video>
+     <div class="overlay"></div>
+     <div class="text">
+         <h2>Profile</h2>
+         <h3></h3>
+         <p>Ingénieur de données
+            passionné par les technologies
+            web, la datascience, et le
+            digitalmarketing. Actuellement
+            à la recherche d’un emploi au
+            sein d’une compagnie IT</p>
+          <a href="">hire me</a>  
+     </div>
+     <ul class="social">
+         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+         <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+         <li><a href=""><i class="fas fa-envelope"></i></a></li>
+         <li><a href=""><i class="fab fa-github"></i></a></li>
+     </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="">Projets</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Formation</a></li>
+            <li><a href="">Stages</a></li>
+            <li><a href="">Compétences</a></li>
+            <li><a href="">Certificats</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+
+
+
+        })
+    </script>
+</body>
+</html>
